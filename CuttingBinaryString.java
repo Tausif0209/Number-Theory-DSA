@@ -7,6 +7,7 @@ public class CuttingBinaryString {
         return (min==Integer.MAX_VALUE)?-1:min;
         }
     private void helper(String s,int count){
+        if(s.isEmpty()) {
             min=Math.min(min,count);
             return ;
         }
